@@ -9,6 +9,7 @@ import SignUp from "./context/SignUp";
 import { UserProvider, useUser } from "./context/UseContext"; 
 import { AppBar, Toolbar, Typography, Button, IconButton, Menu, MenuItem, Avatar } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import CheckoutPage from "./pages/CheckoutPage";
 
 function NavBar() {
   const { currentUser, logout } = useUser();
@@ -88,6 +89,8 @@ function App() {
             <Route path="/Cart" element={<Cart />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/SignUp" element={<SignUp />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
+
           </Routes>
         </Router>
       </UserProvider>

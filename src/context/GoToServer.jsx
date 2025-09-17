@@ -29,7 +29,7 @@ export default function GoToServer() {
 
   const fetchWorkers = async () => {
     try {
-      const res = await axios.get("https://restorunse.onrender.com/workers")
+      const res = await axios.get("https://restorunse.onrender.com/api/workers")
       setWorkers(res.data);
     } catch (err) {
       console.error(err);
